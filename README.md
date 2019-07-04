@@ -30,6 +30,17 @@ This command runs tests located in the `src/tests` folder.
 yarn test
 ```
 
+To facilitate component testing, this template uses `enzyme`. The [`src/tests/setup.ts`](src/tests/setup.ts) file uses the `enzyme` react 16 adapter.
+
+```ts
+import { configure } from 'enzyme';
+import Adapter from 'enzyme-adapter-react-16';
+
+configure({ adapter: new Adapter() });
+```
+
+To prevent unintended tslint warnings, `enzyme` and `enzyme-adapter-react-16` are added to the whitelist of "no-implicit-dependencies" in the [tslint configuration file](tslint.json).
+
 ## Linting, formatting and committing
 
 To ensure that committed code follows conventions, this project uses `prettier`, `tslint` and git hooks (via `husky`) to automate the linting and formatting of code and commit messages.
