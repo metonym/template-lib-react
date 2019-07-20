@@ -1,5 +1,7 @@
 # template-lib-react
 
+[![Build Status](https://travis-ci.com/metonym/template-lib-react.svg?branch=master)](https://travis-ci.com/metonym/template-lib-react)
+
 > Base template for React libraries.
 
 When building a React component or library, do not include `react` and `react-dom` as dependencies. Include them as `devDependencies` and optionally add them to `peerDependencies`.
