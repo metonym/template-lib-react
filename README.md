@@ -4,7 +4,9 @@
 
 > Base template for React libraries.
 
-When building a React component or library, do not include `react` and `react-dom` as dependencies. Include them as `devDependencies` and optionally add them to `peerDependencies`.
+This template provides a boilerplate for building React.js libraries using TypeScript.
+
+When building a React component or library, do not include `react` and `react-dom` as dependencies. Instead, include them as `devDependencies` and optionally add them to `peerDependencies`.
 
 ## Overview
 
