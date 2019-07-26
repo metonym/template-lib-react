@@ -1,7 +1,6 @@
 {
   "compilerOptions": {
     "declaration": true,
-    "esModuleInterop": true,
     "jsx": "react",
     "lib": ["dom", "dom.iterable", "esnext"],
     "module": "commonjs",
@@ -9,6 +8,7 @@
     "outDir": "./lib",
     "removeComments": true,
     "resolveJsonModule": true,
+    "skipLibCheck": true,
     "strict": true,
     "target": "es6"
   },
