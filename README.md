@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.com/metonym/template-lib-react.svg?branch=master)](https://travis-ci.com/metonym/template-lib-react)
 
-> Base template for React libraries.
+> Template for developing React libraries.
 
 This template provides a boilerplate for building React.js libraries using TypeScript.
 
