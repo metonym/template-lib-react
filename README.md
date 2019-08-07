@@ -1,6 +1,7 @@
 # template-lib-react
 
-[![Build Status](https://travis-ci.com/metonym/template-lib-react.svg?branch=master)](https://travis-ci.com/metonym/template-lib-react)
+[![Build][build]][build-badge]
+[![Coverage][codecov-shield]][codecov]
 
 > Template for developing React libraries.
 
@@ -52,3 +53,8 @@ To ensure that committed code follows conventions, this project uses `prettier`,
 ## License
 
 [MIT](LICENSE)
+
+[build]: https://travis-ci.com/metonym/template-lib-react.svg?branch=master
+[build-badge]: https://travis-ci.com/metonym/template-lib-react
+[codecov]: https://codecov.io/gh/metonym/template-lib-react
+[codecov-shield]: https://img.shields.io/codecov/c/github/metonym/template-lib-react.svg
