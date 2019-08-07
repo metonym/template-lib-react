@@ -52,9 +52,6 @@
   },
   "jest": {
     "preset": "ts-jest",
-    "testMatch": [
-      "<rootDir>src/**/*.(spec|test).{ts,tsx}"
-    ],
     "setupFilesAfterEnv": [
       "<rootDir>src/tests/setup.ts"
     ]
