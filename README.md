@@ -7,7 +7,7 @@
 
 This template provides a boilerplate for building React.js libraries using TypeScript.
 
-When building a React component or library, do not include `react` and `react-dom` as dependencies. Instead, include them as `devDependencies` and optionally add them to `peerDependencies`.
+When building a React component or library, do not include `react` and `react-dom` as dependencies. Instead, include them as `devDependencies` and optionally add them as `peerDependencies`.
 
 ## Overview
 
@@ -44,7 +44,18 @@ import Adapter from 'enzyme-adapter-react-16';
 configure({ adapter: new Adapter() });
 ```
 
-To prevent unintended tslint warnings, `enzyme` and `enzyme-adapter-react-16` are added to the whitelist of "no-implicit-dependencies" in the [tslint configuration file](tslint.json).
+`enzyme-to-json` is the snapshot serializer used for snapshot testing.
+
+```tsx
+import toJson from 'enzyme-to-json';
+
+it('matches the snapshot', () => {
+  const wrapper = shallow<Component>(<Component />);
+  expect(toJson(wrapper)).toMatchSnapshot();
+});
+```
+
+To prevent unintended tslint warnings, `enzyme`, `enzyme-adapter-react-16` and `enzyme-to-json` are added to the whitelist of "no-implicit-dependencies" in the [tslint configuration file](tslint.json).
 
 ## Linting, formatting and committing
 
