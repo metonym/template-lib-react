@@ -1,4 +1,5 @@
-import { mount } from 'enzyme';
+import { mount, shallow } from 'enzyme';
+import toJson from 'enzyme-to-json';
 import * as React from 'react';
 import Component from '..';
 
@@ -16,5 +17,10 @@ describe('Component', () => {
     const wrapper = mount<Component>(<Component />);
     expect(method).toHaveBeenCalledTimes(1);
     expect(wrapper.state().data).toEqual([]);
+  });
+
+  it('matches the snapshot', () => {
+    const wrapper = shallow<Component>(<Component />);
+    expect(toJson(wrapper)).toMatchSnapshot();
   });
 });

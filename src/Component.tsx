@@ -10,7 +10,7 @@ class Component extends React.Component<{}, { data: number[] }> {
   }
 
   public render() {
-    return this.state.data;
+    return <React.Fragment>{this.state.data}</React.Fragment>;
   }
 }
 
