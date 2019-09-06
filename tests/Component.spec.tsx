@@ -1,7 +1,7 @@
 import { mount, shallow } from 'enzyme';
 import toJson from 'enzyme-to-json';
 import * as React from 'react';
-import Component from '..';
+import Component from '../src/Component';
 
 let method: jest.SpyInstance<void, []>;
 

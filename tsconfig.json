@@ -6,8 +6,6 @@
     "module": "commonjs",
     "moduleResolution": "node",
     "outDir": "lib",
-    "removeComments": true,
-    "skipLibCheck": true,
     "strict": true,
     "target": "es5"
   },
