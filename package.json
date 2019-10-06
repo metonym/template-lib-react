@@ -13,8 +13,8 @@
     "test:tdd": "jest --watch"
   },
   "peerDependencies": {
-    "react": "^16.x",
-    "react-dom": "^16.x"
+    "react": "^16.8.x",
+    "react-dom": "^16.8.x"
   },
   "devDependencies": {
     "@commitlint/cli": "^8.2.0",
@@ -32,8 +32,8 @@
     "jest": "^24.9.0",
     "prettier": "^1.18.2",
     "pretty-quick": "^1.11.1",
-    "react": "^16.x",
-    "react-dom": "^16.x",
+    "react": "^16.8.x",
+    "react-dom": "^16.8.x",
     "ts-jest": "^24.1.0",
     "tslint": "^5.20.0",
     "tslint-config-prettier": "^1.18.0",
