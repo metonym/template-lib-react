@@ -57,6 +57,15 @@ To ensure that committed code follows conventions, this project uses `prettier`,
 
 When building a React component or library, do not include `react` and `react-dom` as direct dependencies. Instead, include them as `devDependencies` and `peerDependencies`.
 
+This template specifies React minor version ^16.8.x for hooks support.
+
+```json
+"peerDependencies": {
+  "react": "^16.8.x",
+  "react-dom": "^16.8.x"
+}
+```
+
 ## License
 
 [MIT](LICENSE)
