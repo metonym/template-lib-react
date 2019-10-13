@@ -6,8 +6,8 @@
     "module": "commonjs",
     "moduleResolution": "node",
     "outDir": "lib",
-    "strict": true,
     "skipLibCheck": true,
+    "strict": true,
     "target": "es5"
   },
   "include": ["src"]
