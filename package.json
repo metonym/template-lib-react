@@ -13,7 +13,7 @@
     "test:tdd": "jest --watch"
   },
   "peerDependencies": {
-    "react": "^16.11.x",
+    "react": "^16.12.x",
     "react-dom": "^16.12.x"
   },
   "devDependencies": {
@@ -32,7 +32,7 @@
     "jest": "^24.9.0",
     "prettier": "^1.19.1",
     "pretty-quick": "^2.0.1",
-    "react": "^16.11.x",
+    "react": "^16.12.x",
     "react-dom": "^16.12.x",
     "ts-jest": "^24.1.0",
     "tslint": "^5.20.1",
