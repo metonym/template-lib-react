@@ -8,7 +8,6 @@
   "types": "lib/index.d.ts",
   "scripts": {
     "build": "tsc",
-    "lint": "tslint --fix -p . -c tslint.json",
     "test": "jest --coverage",
     "test:tdd": "jest --watch"
   },
@@ -30,6 +29,7 @@
     "enzyme-to-json": "^3.4.3",
     "husky": "^3.1.0",
     "jest": "^24.9.0",
+    "lint-staged": "^9.4.3",
     "prettier": "^1.19.1",
     "pretty-quick": "^2.0.1",
     "react": "^16.12.x",
@@ -41,10 +41,16 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "yarn lint && pretty-quick --staged",
+      "pre-commit": "lint-staged && pretty-quick --staged",
       "pre-push": "yarn test",
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
     }
+  },
+  "lint-staged": {
+    "*.{ts,tsx}": [
+      "tslint --fix -p .",
+      "git add"
+    ]
   },
   "prettier": {
     "tabWidth": 2,

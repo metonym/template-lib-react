@@ -11,10 +11,6 @@
 
 Builds the project for production.
 
-### `yarn lint`
-
-Runs [TSLint](https://github.com/palantir/tslint) and fixes errors (if fixable).
-
 #### Linting, formatting and committing
 
 To ensure that committed code follows conventions, this project uses `prettier`, `tslint` and git hooks (via `husky`) to automate the linting and formatting of code and commit messages.
