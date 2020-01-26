@@ -7,16 +7,11 @@
 
 ## Getting Started
 
-Clone the template:
+Clone the template and install its dependencies:
 
 ```bash
 git clone git@github.com:metonym/template-lib-react.git
 cd template-lib-react
-```
-
-Install its dependencies:
-
-```bash
 yarn install
 ```
 
@@ -67,15 +62,6 @@ To ensure that committed code follows conventions, this project uses `prettier`,
 ## Tips
 
 When building a React component or library, do not include `react` and `react-dom` as direct dependencies. Instead, include them as `devDependencies` and `peerDependencies`.
-
-This template specifies React minor version ^16.8.x for hooks support.
-
-```json
-"peerDependencies": {
-  "react": "^16.8.x",
-  "react-dom": "^16.8.x"
-}
-```
 
 ## License
 
